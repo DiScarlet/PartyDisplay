@@ -6,13 +6,34 @@
 #include <SpotifyEsp32.h>
 #include <SPI.h>
 
-//Vars
+//STRUCTS
+struct Theme
+{
+  const char* keyword;
+  uint16_t color;
+};
+
+//Struct objects
+Theme themes[] = {
+  {"drake", ST77XX_MAGENTA},
+  {"travis", ST77XX_MAGENTA},
+  {"metal", ST77XX_RED},
+  {"rock", ST77XX_RED},
+  {"pop", ST77XX_CYAN},
+  {"chill", ST77XX_BLUE},
+  {"lofi", ST77XX_BLUE}
+};
+
+
+//VARS
 //consts
-const string LOOP_DELAY_MS = 1000;
+const int LOOP_DELAY_MS = 1000;
 const char* CLIENT_ID = "CLIENT_ID";
 const char* CLIENT_SECRET = "CLIENT_SECRET";
 const char* SSID = "later";
 const char* PASSWORD = "not now";
+  //themes
+const uint8_t themeCount = sizeof(themes)/sizeof(themes[0]);
 //vars
 String lastArtist;
 String lastTrackname;
@@ -33,13 +54,15 @@ Spotify sp(CLIENT_ID, CLIENT_SECRET);
 Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 
 
+
+//FUNCS
 void setup() {
   Serial.begin(115200);
 
     //Initiate the screen
   tft.initR(INITR_BLACKTAB); //type of screen
   Serial.println("TFT Initialized!");
-  tft.fillScreen(ST77XX_BLACK);
+  tft.fillRect(0, 0, 128, 60, ST77XX_BLACK);
 
 
   //WiFi setup
@@ -79,18 +102,18 @@ void loop() {
     lastArtist = currentArtist;
 
     updateTheme(lastArtist);
+    Serial.println("Artist:" + lastArtist);
 
     tft.setTextColor(currentThemeColor);
-    Serial.println("Artist:" + lastArtist);
     tft.setCursor(10,10);
-    tft.write(lastArtist.c_str());
+    tft.print(lastArtist);
   }
 
   if(lastTrackname != currentTrackname && currentArtist != "Something went wrong" && currentTrackname != "null"){
     lastTrackname = currentTrackname;
     Serial.println("Track:" + lastTrackname);
     tft.setCursor(10,40);
-    tft.write(lastTrackname.c_str());
+    tft.print(lastTrackname);
   }
 
 
@@ -128,17 +151,14 @@ void drawProgressBar(int progress, int duration)
 void updateTheme(String artist)
 {
   artist.toLowerCase();
+  currentThemeColor = ST77XX_GREEN;
 
-  if(artist.indexOf("drake") >= 0 || artist.indexOf("travis") >= 0)
+  for(uint8_t i = 0; i < themeCount; i++)
   {
-    currentThemeColor = ST77XX_MAGENTA;
-  }
-  else if(artist.indexOf("metal") >= 0 || artist.indexOf("rock") >= 0)
-  {
-    currentThemeColor = ST77XX_RED;
-  }
-  else
-  {
-    currentThemeColor = ST77XX_GREEN;
+    if(artist.indexOf(themes[i].keyword) >= 0)
+    {
+      currentThemeColor = themes[i].color;
+      break;
+    }
   }
 }
