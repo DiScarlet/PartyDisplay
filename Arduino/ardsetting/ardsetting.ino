@@ -8,6 +8,7 @@
 
 //Vars
 //consts
+const string LOOP_DELAY_MS = 1000;
 const char* CLIENT_ID = "CLIENT_ID";
 const char* CLIENT_SECRET = "CLIENT_SECRET";
 const char* SSID = "later";
@@ -19,6 +20,8 @@ String lastTrackname;
 int progressMs = 0;
 int durationMs = 1; // mi val of 1 to avoid division by 0 error
 int lastProgressWidth = -1;
+  //background color
+uint16_t currentThemeColor = ST77XX_GREEN;
 //def
 #define TFT_CS 1
 #define TFT_RST 2
@@ -27,7 +30,7 @@ int lastProgressWidth = -1;
 #define TFT_MOSI 5
 //objs
 Spotify sp(CLIENT_ID, CLIENT_SECRET);
-Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST)
+Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 
 
 void setup() {
@@ -74,6 +77,10 @@ void loop() {
   if (lastArtist != currentArtist && currentArtist != "Something went wrong" && !currentArtist.isEmpty()){
     tft.fillScreen(ST77XX_BLACK);
     lastArtist = currentArtist;
+
+    updateTheme(lastArtist);
+
+    tft.setTextColor(currentThemeColor);
     Serial.println("Artist:" + lastArtist);
     tft.setCursor(10,10);
     tft.write(lastArtist.c_str());
@@ -90,30 +97,48 @@ void loop() {
   //draw progress bar
   if(durationMs > 0)
   {
-    DrawProgressBar(progressMs, durationMs);
+    drawProgressBar(progressMs, durationMs);
   }
 
-  delay(2000);
+  delay(LOOP_DELAY_MS);
 }
 
 
 //helper functions
-void DrawProgressBar(int progress, int duration)
+void drawProgressBar(int progress, int duration)
 {
   int barX = 10;
   int barY = 70;
   int barWidth = 100;
   int barHeight = 8;
 
-  float percet = (float)progress / duration;
-  int currentWidth = percent * barX;
+  float percent = (float)progress / duration;
+  int currentWidth = percent * barWidth;
 
   if(currentWidth != lastProgressWidth)
   {
     tft.fillRect(barX, barY, barWidth, barHeight, ST77XX_BLACK);
-    tft.DrawRect(barX, barY, barWidth, barHeight, ST77XX_WHITE);
-    tft.fillRect(barX, barY, barWidth, barHeight, ST77XX_GREEN);
+    tft.drawRect(barX, barY, barWidth, barHeight, ST77XX_WHITE);
+    tft.fillRect(barX, barY, currentWidth, barHeight, currentThemeColor);
 
     lastProgressWidth = currentWidth;
+  }
+}
+
+void updateTheme(String artist)
+{
+  artist.toLowerCase();
+
+  if(artist.indexOf("drake") >= 0 || artist.indexOf("travis") >= 0)
+  {
+    currentThemeColor = ST77XX_MAGENTA;
+  }
+  else if(artist.indexOf("metal") >= 0 || artist.indexOf("rock") >= 0)
+  {
+    currentThemeColor = ST77XX_RED;
+  }
+  else
+  {
+    currentThemeColor = ST77XX_GREEN;
   }
 }
