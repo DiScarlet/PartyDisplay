@@ -6,13 +6,9 @@
 
 **Party Display** is a hardware-based music project built using an ESP32 and a 1.8" TFT screen.
 
----
-
 ## What does it do?
 
-It connects to the Spotify API and allows you to control the music you're currently listening to.
-
----
+It connects to the Spotify API and allows you to control the music you're currently listening to.   
 
 ## Why does it exist?
 
@@ -41,8 +37,7 @@ Displays song information, themes, and a progress bar.
 
 ### Dupont Cables (Female-to-Female)  
 Used to connect all components together (ESP32 and TFT both use male pins).  
-
-![DuPont Connections](Images/image.png)
+![DuPont Connections](Images/image-9.png)
 
 ---
 
@@ -73,6 +68,6 @@ Used for playback control:
 
 ## Future Improvements
 
-- I am planning to add voulume control  
+- I am planning to add volume control  
 - Display album artwork (optional)  
 - Improve case design
