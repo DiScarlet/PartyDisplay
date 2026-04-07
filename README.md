@@ -20,7 +20,7 @@ Spotify now actually *feels physical* — using real buttons is far more engagin
 
 ---
 
-## 🔧 Components
+## Components (Refer to Bill of Materials)
 
 ### ESP32 Microcontroller  
 Handles backend logic such as Wi-Fi communication and Spotify API integration.  
