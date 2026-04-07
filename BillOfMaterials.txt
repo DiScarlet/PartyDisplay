@@ -2,23 +2,28 @@ Party Display:
     -Hardware components:
 
 Display ST7735
-Price: 25.00 PLN + Free delivery
+Price: 11.33 PLN
 Link: https://pl.aliexpress.com/item/1005009694512284.html?spm=a2g0o.productlist.main.13.5d3dhU1nhU1nGr&utparam-url=scene%3Asearch%7Cquery_from%3Apc_back_same_best%7Cx_object_id%3A1005009694512284%7C_p_origin_prod%3A&algo_pvid=cb9c72b2-d10d-4b34-a6f6-e0093e2703d7&algo_exp_id=cb9c72b2-d10d-4b34-a6f6-e0093e2703d7&pdp_ext_f=%7B%22order%22%3A%221900%22%2C%22spu_best_type%22%3A%22price%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21PLN%2111.34%2111.33%21%21%2120.50%2120.50%21%40211b6c1917751684788712719eab8b%2112000049877275098%21sea%21PL%211891016133%21X%211%210%21n_tag%3A-29919%3Bd%3A226a6996%3Bm03_new_user%3A-29895
 
 ESP32 Board
-Price: 27,98zł
+Price: 15.67 PLN
 Link: https://pl.aliexpress.com/item/1005005953505528.html?spm=a2g0o.productlist.main.1.50a178davPMrl7&algo_pvid=696063f2-c829-47c4-a80d-fc797a86a5d0&algo_exp_id=696063f2-c829-47c4-a80d-fc797a86a5d0-0&pdp_ext_f=%7B%22order%22%3A%2217822%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21PLN%2117.41%2115.67%21%21%2131.48%2128.33%21%402103890117751676809641092eb051%2112000035007650505%21sea%21PL%211891016133%21X%211%210%21n_tag%3A-29919%3Bd%3A226a6996%3Bm03_new_user%3A-29895%3BpisId%3A5000000203821645&curPageLogUid=9ksbkcB91Rnm&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005005953505528%7C_p_origin_prod%3A&_gl=1*1ykx99w*_gcl_aw*R0NMLjE3NzQ4MTcwNzMuQ2owS0NRandtNlBPQmhDckFSSXNBSUc1OENJZnFLRnFIck5od2dXNjJOeldJa0FUZl9ER0l2NnA3VDduamNTQkdVLU9MTzFyZXdiUlBCRWFBdmxkRUFMd193Y0I.*_gcl_dc*R0NMLjE3NzQ4MTcwNzMuQ2owS0NRandtNlBPQmhDckFSSXNBSUc1OENJZnFLRnFIck5od2dXNjJOeldJa0FUZl9ER0l2NnA3VDduamNTQkdVLU9MTzFyZXdiUlBCRWFBdmxkRUFMd193Y0I.*_gcl_au*MTY4NjAxNTUyMy4xNzc0ODE2MjQ4*_ga*MTc4ODM3MTg3LjE3NzQ4MTYyNDk.*_ga_VED1YSGNC7*czE3NzUxNjc2ODUkbzMkZzAkdDE3NzUxNjc2ODUkajYwJGwwJGgw
 
+
 Tactile switches
-Price: 11.19 PLN 
-Link: https://pl.aliexpress.com/item/1005007433195377.html?spm=a2g0o.tesla.0.0.7660Ddi1Ddi1kA&afTraceInfo=1005007433195377__pc__c_ppc_item_bridge_pc_main__HtwzVMi__1774817070120&gatewayAdapt=glo2pol
+Price: 3.99 PLN 
+Link: https://pl.aliexpress.com/item/1005006046180384.html?spm=a2g0o.productlist.main.1.df4f7c24cvM6D3&algo_pvid=c8eab246-784d-422b-8283-af953ff10efe&algo_exp_id=c8eab246-784d-422b-8283-af953ff10efe-0&pdp_ext_f=%7B%22order%22%3A%226913%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21PLN%213.80%213.80%21%21%211.00%211.00%21%402103890917752372300151589ef064%2112000035472972531%21sea%21PL%211891016133%21X%211%210%21n_tag%3A-29919%3Bd%3A226a6996%3Bm03_new_user%3A-29895&curPageLogUid=45e2ExV5FvcD&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005006046180384%7C_p_origin_prod%3A
 
-DuPont 40-pin Cable
-Price: 7.24 PLN 
-Link: https://pl.aliexpress.com/item/1005009751359792.html?spm=a2g0o.productlist.main.1.78e7vZ9hvZ9hMZ&algo_pvid=9cb2e36e-9941-4345-80a5-2c9fdc5b6c76&algo_exp_id=9cb2e36e-9941-4345-80a5-2c9fdc5b6c76-0&pdp_ext_f=%7B%22order%22%3A%2231%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21PLN%217.99%217.99%21%21%2114.53%2114.53%21%402103849717748185168202232ed4d9%2112000050059564784%21sea%21PL%211891016133%21X%211%210%21n_tag%3A-29919%3Bd%3A226a6996%3Bm03_new_user%3A-29895&curPageLogUid=xR7N0CcNEqy5&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005009751359792%7C_p_origin_prod%3A
+DuPont Cable (F-F M-M M-F)
+Price: 22,89 PLN
+Link: https://pl.aliexpress.com/item/1005007576134065.html?spm=a2g0o.productlist.main.1.5385CbhgCbhgLf&algo_pvid=b9921913-9b83-4acc-bb87-7a6665d2b086&algo_exp_id=b9921913-9b83-4acc-bb87-7a6665d2b086-0&pdp_ext_f=%7B%22order%22%3A%22524%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21PLN%2184.63%2125.39%21%21%21153.15%2145.95%21%402103846917754127215898239e70c1%2112000041394912394%21sea%21PL%211891016133%21X%211%210%21n_tag%3A-29919%3Bd%3A226a6996%3Bm03_new_user%3A-29895&curPageLogUid=pXD8G4Z7zBA1&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005007576134065%7C_p_origin_prod%3A
 
-Subotal: 42,04zł
+Breadboard 
+Price: 10 PLN
+https://www.aliexpress.com/ssr/300000512/BundleDeals2?spm=a2g0o.productlist.main.4.36af7612sM5Mdn&productIds=1005003620760303:12000026528345127&pha_manifest=ssr&_immersiveMode=true&disableNav=YES&sourceName=SEARCHProduct&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005003620760303%7C_p_origin_prod%3A&pvid=a230ea6d-67ca-423a-807e-92d22e303007&_gl=1*1bxvazq*_gcl_aw*R0NMLjE3NzU0MTIzMzIuQ2owS0NRandrTWpPQmhDNUFSSXNBRElkYjNmZjl5TmNDejFHaVNlaF82elM0bXNrVndrYzBHVmpBeWRNUlJvdzJjbF9iemJ3QlEwdVhka2FBbGx3RUFMd193Y0I.*_gcl_dc*R0NMLjE3NzU0MTIzMzIuQ2owS0NRandrTWpPQmhDNUFSSXNBRElkYjNmZjl5TmNDejFHaVNlaF82elM0bXNrVndrYzBHVmpBeWRNUlJvdzJjbF9iemJ3QlEwdVhka2FBbGx3RUFMd193Y0I.*_gcl_au*MTY4NjAxNTUyMy4xNzc0ODE2MjQ4*_ga*MTc4ODM3MTg3LjE3NzQ4MTYyNDk.*_ga_VED1YSGNC7*czE3NzU0MTExNTMkbzkkZzEkdDE3NzU0MTMzMjMkajM1JGwwJGgw
 
-3D Printing the Case(I have no definite price for now): ~50PLN
+Subotal: 63.88 PLN
 
-TOTAL: ~92.04 PLN / 24.78 USD / 5 hours
+3D Printing the Case: 20 PLN
+
+TOTAL: 83.88 PLN / 23 USD

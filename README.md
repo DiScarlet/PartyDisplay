@@ -1,5 +1,6 @@
 # Party Display
 
+![Zine Page](Images/zine.png)
 ---
 
 ## What is this project?
@@ -69,5 +70,5 @@ Used for playback control:
 ## Future Improvements
 
 - I am planning to add volume control  
-- Display album artwork (optional)  
+- Display album artwork (maybe?)  
 - Improve case design
