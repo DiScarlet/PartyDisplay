@@ -1,4 +1,4 @@
-# Party Display
+# Party Display 2.0
 
 ![Zine Page](Images/zine.png)
 ---
@@ -17,6 +17,9 @@ This project gives you a **dedicated physical device** to interact with your mus
 
 I created it as a way to kick off my journey into hardware development.  
 Spotify now actually *feels physical* — using real buttons is far more engaging than tapping digital ones on a screen.
+
+## What is new in version 2.0?
+The star was separated from the lid to ensure more stable 3D printing. A USB-C plug was added to the full assembly, and the hole in the lid was enlarged to incorporate all variations of the cable. Additional file formats (including .f3d) were exported, and the case was colored using the Appearances tool.
 
 ---
 
@@ -52,6 +55,23 @@ Used for playback control:
 
 ---
 
+## Assembly Instructions
+
+1. Insert the display into the case, ensuring it aligns with the frame, and secure it with glue.
+2. Flash the ESP32 using the script found [here](Arduino/ardsetting/ardsetting.ino).
+3. Connect the ESP32 pins as follows:
+ - Buttons:
+ -- Play/Pause : GPIO 11
+ -- Next : GPIO 10
+ -- Previous :  GPIO 9
+ - Display:
+ -- Connect as shown in the Wiring section below.
+4. Insert the buttons into their respective holes and secure them.
+5. Position the ESP32 as illustrated in the assembly diagram.
+6. Attach the star to the lid (cover).
+7. Snap the lid onto the main body to close the case.
+
+---
 ## Wiring
 
 ![Wiring](Images/image-4.png)
