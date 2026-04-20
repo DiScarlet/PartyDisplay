@@ -49,15 +49,31 @@ uint16_t currentThemeColor = ST77XX_GREEN;
 #define TFT_DC 3
 #define TFT_SCLK 4
 #define TFT_MOSI 5
+  //buttons
+#define BTN_PLAY_PAUSE 11
+#define BTN_NEXT 10
+#define BTN_PREV 9
 //objs
 Spotify sp(CLIENT_ID, CLIENT_SECRET);
 Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
-
+//state vars
+  //bools
+bool lastPlayState = HIGH;
+bool lastNextState = HIGH;
+bool lastPrevState = HIGH;
+  //long, int, float
+unsigned long lastDebounceTime = 0;
+const int debounceDelay  = 200;
 
 
 //FUNCS
 void setup() {
   Serial.begin(115200);
+
+    //Setup the buttons'=
+  pinMode(BTN_PLAY_PAUSE, INPUT_PULLUP);
+  pinMode(BTN_NEXT, INPUT_PULLUP);
+  pinMode(BTN_PREV, INPUT_PULLUP);
 
     //Initiate the screen
   tft.initR(INITR_BLACKTAB); //type of screen
@@ -161,4 +177,44 @@ void updateTheme(String artist)
       break;
     }
   }
+}
+
+void handleButtons()
+{
+  if(millis() - lastDebounceTime < debounceDelay)
+    return;
+
+  bool playState = digitalRead(BTN_PLAY_PAUSE);
+  bool nextState = digitalRead(BTN_NEXT);
+  bool prevState = digitalRead(BTN_PREV);
+
+  //Play/Pause pressed
+  if(playState == LOW && lastPlayState == HIGH)
+  {
+    Serial.println("Play/Pause pressed");
+    sp.toggle_play_pause();
+    lastDebounceTime = millis();
+  }
+
+
+  //Next
+  if (nextState == LOW lastNextState == HIGH)
+  {
+    Serial.println("Next pressed");
+    sp.next_track();
+    lastDebounceTime = millis();
+  }
+
+   //Prev
+  if (prevState == LOW lastPrevState == HIGH)
+  {
+    Serial.println("Prev pressed");
+    sp.previous_track();
+    lastDebounceTime = millis();
+  }
+
+
+  lastPlayState = playState;
+  lastNextState = nextState;
+  lastPrevState = prevState;
 }
