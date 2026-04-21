@@ -20,7 +20,8 @@ I created it as a way to kick off my journey into hardware development.
 Spotify now actually *feels physical* — using real buttons is far more engaging than tapping digital ones on a screen.
 
 ## What is new in version 2.0?
-The star was separated from the lid to ensure more stable 3D printing. A USB-C plug was added to the full assembly, and the hole in the lid was enlarged to incorporate all variations of the cable. Additional file formats (including .f3d) were exported, and the case was colored using the Appearances tool. Added more button functionality.
+The star was separated from the lid to ensure more stable 3D printing. A USB-C plug was added to the full assembly, and the hole in the lid was enlarged to incorporate all variations of the cable. Additional file formats (including .f3d) were exported, and the case was colored using the Appearances tool. Added more button functionality. 
+Introduced a new, simple, yet reliable locking mechanism to secure the lid in place.
 
 ---
 
@@ -76,6 +77,7 @@ Used for playback control:
 5. Position the ESP32 as illustrated in the assembly diagram.
 6. Attach the star to the lid (cover).
 7. Snap the lid onto the main body to close the case.
+8. Secure the lid in place using the decorative rod with length of 12.5 mm and diameter of 3.1 mm.
 
 ---
 ## Wiring
